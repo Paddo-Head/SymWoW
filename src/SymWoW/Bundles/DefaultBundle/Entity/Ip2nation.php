@@ -27,17 +27,6 @@ class Ip2nation
     private $country;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
-
-
-
-    /**
      * Set ip
      *
      * @param integer $ip
@@ -81,15 +70,5 @@ class Ip2nation
     public function getCountry()
     {
         return $this->country;
-    }
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
     }
 }
