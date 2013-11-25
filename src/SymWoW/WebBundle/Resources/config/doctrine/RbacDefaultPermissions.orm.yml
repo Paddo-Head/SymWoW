@@ -1,0 +1,21 @@
+RbacDefaultPermissions:
+    type: entity
+    table: rbac_default_permissions
+    fields:
+        secid:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            column: secId
+    oneToOne:
+        permissionid:
+            targetEntity: RbacPermissions
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                permissionId:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

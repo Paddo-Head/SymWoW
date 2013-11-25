@@ -1,0 +1,27 @@
+Uptime:
+    type: entity
+    table: uptime
+    fields:
+        realmid:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+        starttime:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+        uptime:
+            type: integer
+            unsigned: true
+            nullable: false
+        maxplayers:
+            type: smallint
+            nullable: false
+        revision:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

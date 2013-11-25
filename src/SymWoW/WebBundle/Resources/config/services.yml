@@ -1,5 +1,5 @@
 parameters:
-#    web.example.class: SymWoW\WebBundle\Example
+#    web.example.class: Symwow\WebBundle\Example
 
 services:
 #    web.example:

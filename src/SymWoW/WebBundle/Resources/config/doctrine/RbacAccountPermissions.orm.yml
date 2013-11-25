@@ -1,0 +1,33 @@
+RbacAccountPermissions:
+    type: entity
+    table: rbac_account_permissions
+    fields:
+        realmid:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: realmId
+        granted:
+            type: boolean
+            nullable: false
+    oneToOne:
+        accountid:
+            targetEntity: Account
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                accountId:
+                    referencedColumnName: id
+            orphanRemoval: false
+        permissionid:
+            targetEntity: RbacPermissions
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                permissionId:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

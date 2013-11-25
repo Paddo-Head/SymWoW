@@ -1,0 +1,113 @@
+Account:
+    type: entity
+    table: account
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        username:
+            type: string
+            length: 32
+            fixed: false
+            nullable: false
+        shaPassHash:
+            type: string
+            length: 40
+            fixed: false
+            nullable: false
+            column: sha_pass_hash
+        sessionkey:
+            type: string
+            length: 80
+            fixed: false
+            nullable: false
+        v:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+        s:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+        regMail:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: reg_mail
+        tokenKey:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: token_key
+        email:
+            type: string
+            length: 254
+            fixed: false
+            nullable: true
+        joindate:
+            type: datetime
+            nullable: false
+        lastIp:
+            type: string
+            length: 15
+            fixed: false
+            nullable: false
+            column: last_ip
+        failedLogins:
+            type: integer
+            unsigned: true
+            nullable: false
+            column: failed_logins
+        locked:
+            type: boolean
+            nullable: false
+        lockCountry:
+            type: string
+            length: 2
+            fixed: false
+            nullable: false
+            column: lock_country
+        lastLogin:
+            type: datetime
+            nullable: false
+            column: last_login
+        online:
+            type: boolean
+            nullable: false
+        expansion:
+            type: boolean
+            nullable: false
+        mutetime:
+            type: bigint
+            nullable: false
+        mutereason:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        muteby:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+        locale:
+            type: boolean
+            nullable: false
+        os:
+            type: string
+            length: 3
+            fixed: false
+            nullable: false
+        recruiter:
+            type: integer
+            unsigned: false
+            nullable: false
+    lifecycleCallbacks: {  }

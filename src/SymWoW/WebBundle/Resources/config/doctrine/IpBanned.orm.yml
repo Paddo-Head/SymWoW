@@ -1,0 +1,30 @@
+IpBanned:
+    type: entity
+    table: ip_banned
+    fields:
+        ip:
+            id: true
+            type: string
+            length: 15
+            fixed: false
+            nullable: false
+        bandate:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+        unbandate:
+            type: integer
+            unsigned: true
+            nullable: false
+        bannedby:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+        banreason:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

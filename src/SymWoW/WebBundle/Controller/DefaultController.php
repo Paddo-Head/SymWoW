@@ -1,6 +1,6 @@
 <?php
 
-namespace SymWoW\WebBundle\Controller;
+namespace Symwow\WebBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

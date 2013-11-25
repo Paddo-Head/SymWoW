@@ -1,0 +1,19 @@
+AccountAccess:
+    type: entity
+    table: account_access
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+        realmid:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: RealmID
+        gmlevel:
+            type: boolean
+            nullable: false
+    lifecycleCallbacks: {  }

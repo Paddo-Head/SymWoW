@@ -1,6 +1,6 @@
 <?php
 
-namespace SymWoW\WebBundle;
+namespace Symwow\WebBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

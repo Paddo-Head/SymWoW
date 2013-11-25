@@ -1,0 +1,42 @@
+Ip2nationcountries:
+    type: entity
+    table: ip2nationcountries
+    fields:
+        code:
+            id: true
+            type: string
+            length: 4
+            fixed: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        isoCode2:
+            type: string
+            length: 2
+            fixed: false
+            nullable: false
+            column: iso_code_2
+        isoCode3:
+            type: string
+            length: 3
+            fixed: false
+            nullable: true
+            column: iso_code_3
+        isoCountry:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: iso_country
+        country:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        lat:
+            type: float
+            nullable: false
+        lon:
+            type: float
+            nullable: false
+    lifecycleCallbacks: {  }
