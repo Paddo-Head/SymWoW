@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\Ip2nationcountries" table="ip2nationcountries">
+    <id name="code" type="string" column="code" length="4">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="isoCode2" type="string" column="iso_code_2" length="2" nullable="false"/>
+    <field name="isoCode3" type="string" column="iso_code_3" length="3" nullable="true"/>
+    <field name="isoCountry" type="string" column="iso_country" length="255" nullable="false"/>
+    <field name="country" type="string" column="country" length="255" nullable="false"/>
+    <field name="lat" type="float" column="lat" nullable="false"/>
+    <field name="lon" type="float" column="lon" nullable="false"/>
+  </entity>
+</doctrine-mapping>

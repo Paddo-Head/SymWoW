@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\Uptime" table="uptime">
+    <id name="realmid" type="integer" column="realmid"/>
+    <id name="starttime" type="integer" column="starttime"/>
+    <field name="uptime" type="integer" column="uptime" nullable="false"/>
+    <field name="maxplayers" type="smallint" column="maxplayers" nullable="false"/>
+    <field name="revision" type="string" column="revision" length="255" nullable="false"/>
+  </entity>
+</doctrine-mapping>

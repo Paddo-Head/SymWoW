@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\Account" table="account">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="username" type="string" column="username" length="32" nullable="false"/>
+    <field name="shaPassHash" type="string" column="sha_pass_hash" length="40" nullable="false"/>
+    <field name="sessionkey" type="string" column="sessionkey" length="80" nullable="false"/>
+    <field name="v" type="string" column="v" length="64" nullable="true"/>
+    <field name="s" type="string" column="s" length="64" nullable="true"/>
+    <field name="regMail" type="string" column="reg_mail" length="255" nullable="false"/>
+    <field name="tokenKey" type="string" column="token_key" length="100" nullable="false"/>
+    <field name="email" type="string" column="email" length="254" nullable="true"/>
+    <field name="joindate" type="datetime" column="joindate" nullable="false"/>
+    <field name="lastIp" type="string" column="last_ip" length="15" nullable="false"/>
+    <field name="failedLogins" type="integer" column="failed_logins" nullable="false"/>
+    <field name="locked" type="boolean" column="locked" nullable="false"/>
+    <field name="lockCountry" type="string" column="lock_country" length="2" nullable="false"/>
+    <field name="lastLogin" type="datetime" column="last_login" nullable="false"/>
+    <field name="online" type="boolean" column="online" nullable="false"/>
+    <field name="expansion" type="boolean" column="expansion" nullable="false"/>
+    <field name="mutetime" type="bigint" column="mutetime" nullable="false"/>
+    <field name="mutereason" type="string" column="mutereason" length="255" nullable="false"/>
+    <field name="muteby" type="string" column="muteby" length="50" nullable="false"/>
+    <field name="locale" type="boolean" column="locale" nullable="false"/>
+    <field name="os" type="string" column="os" length="3" nullable="false"/>
+    <field name="recruiter" type="integer" column="recruiter" nullable="false"/>
+  </entity>
+</doctrine-mapping>

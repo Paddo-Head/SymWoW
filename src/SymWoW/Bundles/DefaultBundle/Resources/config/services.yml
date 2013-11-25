@@ -1,0 +1,7 @@
+parameters:
+#    symwow_bundles_default.example.class: Symwow\Bundles\DefaultBundle\Example
+
+services:
+#    symwow_bundles_default.example:
+#        class: %symwow_bundles_default.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
