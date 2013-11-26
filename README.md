@@ -15,6 +15,10 @@ chapter of the Symfony Documentation.
 2. Run the following command in the project root: "php composer.phar update".
 3. Run the following command in the project root: "php composer.phar install".
 4. In your browser, navigate to: "127.0.0.1/path/to/symwow/web/config.php" and follow the setup.
+5. Make sure your auth database exists and run the following
+command in the project root: "php app/console doctrine:schema:update --force".
+(Symfony requires every table to have a identifying key so we update an auto increment to: "auth.logs" and "auth.ip2nation")
+
 
 2) Checking your System Configuration
 -------------------------------------
@@ -47,11 +51,15 @@ http://symfony.com/doc/current/book/index.html
 
 What's inside?
 ---------------
-(To be developed...).
-Login page.
-Registration page.
-Vote system.
-Donation system.
+
+Login page (To be developed...)
+
+Registration page (To be developed...)
+
+Vote system (To be developed...)
+
+Donation system (To be developed...)
+
 
 All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.

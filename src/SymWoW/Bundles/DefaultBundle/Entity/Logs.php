@@ -48,6 +48,15 @@ class Logs
     private $string;
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
      * Set time
      *
      * @param integer $time
@@ -160,5 +169,15 @@ class Logs
     public function getString()
     {
         return $this->string;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 }

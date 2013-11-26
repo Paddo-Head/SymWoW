@@ -1,3 +1,11 @@
 symwow_bundles_default_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: SymwowBundlesDefaultBundle:Default:index }
+
+symwow_account_register:
+    path:     /register
+    defaults: { _controller: SymwowBundlesDefaultBundle:Account:register }
+
+symwow_account_create:
+    path:     /register/create
+    defaults: { _controller: SymwowBundlesDefaultBundle:Account:create }

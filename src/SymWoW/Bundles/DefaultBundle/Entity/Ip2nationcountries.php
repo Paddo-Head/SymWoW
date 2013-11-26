@@ -63,8 +63,6 @@ class Ip2nationcountries
      */
     private $code;
 
-
-
     /**
      * Set isoCode2
      *
