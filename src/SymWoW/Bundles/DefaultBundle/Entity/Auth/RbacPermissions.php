@@ -31,7 +31,7 @@ class RbacPermissions
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Symwow\Bundles\DefaultBundle\Entity\RbacPermissions", inversedBy="id")
+     * @ORM\ManyToMany(targetEntity="Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions", inversedBy="id")
      * @ORM\JoinTable(name="rbac_linked_permissions",
      *   joinColumns={
      *     @ORM\JoinColumn(name="id", referencedColumnName="id")
@@ -88,10 +88,10 @@ class RbacPermissions
     /**
      * Add linkedid
      *
-     * @param \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $linkedid
+     * @param \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $linkedid
      * @return RbacPermissions
      */
-    public function addLinkedid(\Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $linkedid)
+    public function addLinkedid(\Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $linkedid)
     {
         $this->linkedid[] = $linkedid;
     
@@ -101,9 +101,9 @@ class RbacPermissions
     /**
      * Remove linkedid
      *
-     * @param \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $linkedid
+     * @param \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $linkedid
      */
-    public function removeLinkedid(\Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $linkedid)
+    public function removeLinkedid(\Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $linkedid)
     {
         $this->linkedid->removeElement($linkedid);
     }

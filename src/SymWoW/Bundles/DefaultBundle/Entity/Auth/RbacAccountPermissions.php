@@ -29,9 +29,9 @@ class RbacAccountPermissions
     private $realmid;
 
     /**
-     * @var \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions
+     * @var \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions
      *
-     * @ORM\OneToOne(targetEntity="Symwow\Bundles\DefaultBundle\Entity\RbacPermissions")
+     * @ORM\OneToOne(targetEntity="Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="permissionId", referencedColumnName="id", unique=true)
      * })
@@ -39,9 +39,9 @@ class RbacAccountPermissions
     private $permissionid;
 
     /**
-     * @var \Symwow\Bundles\DefaultBundle\Entity\Account
+     * @var \Symwow\Bundles\DefaultBundle\Entity\Auth\Account
      *
-     * @ORM\OneToOne(targetEntity="Symwow\Bundles\DefaultBundle\Entity\Account")
+     * @ORM\OneToOne(targetEntity="Symwow\Bundles\DefaultBundle\Entity\Auth\Account")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="accountId", referencedColumnName="id", unique=true)
      * })
@@ -99,10 +99,10 @@ class RbacAccountPermissions
     /**
      * Set permissionid
      *
-     * @param \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $permissionid
+     * @param \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $permissionid
      * @return RbacAccountPermissions
      */
-    public function setPermissionid(\Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $permissionid = null)
+    public function setPermissionid(\Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $permissionid = null)
     {
         $this->permissionid = $permissionid;
     
@@ -112,7 +112,7 @@ class RbacAccountPermissions
     /**
      * Get permissionid
      *
-     * @return \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions 
+     * @return \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions
      */
     public function getPermissionid()
     {
@@ -122,10 +122,10 @@ class RbacAccountPermissions
     /**
      * Set accountid
      *
-     * @param \Symwow\Bundles\DefaultBundle\Entity\Account $accountid
+     * @param \Symwow\Bundles\DefaultBundle\Entity\Auth\Account $accountid
      * @return RbacAccountPermissions
      */
-    public function setAccountid(\Symwow\Bundles\DefaultBundle\Entity\Account $accountid = null)
+    public function setAccountid(\Symwow\Bundles\DefaultBundle\Entity\Auth\Account $accountid = null)
     {
         $this->accountid = $accountid;
     
@@ -135,7 +135,7 @@ class RbacAccountPermissions
     /**
      * Get accountid
      *
-     * @return \Symwow\Bundles\DefaultBundle\Entity\Account 
+     * @return \Symwow\Bundles\DefaultBundle\Entity\Auth\Account
      */
     public function getAccountid()
     {

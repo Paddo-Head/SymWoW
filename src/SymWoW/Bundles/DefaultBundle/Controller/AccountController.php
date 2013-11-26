@@ -34,23 +34,23 @@ class AccountController extends Controller
         if ($form->isValid()) {
             $registration = $form->getData();
 
-            $registration->getAccount()->setShapasshash(SHA1(strtoupper($registration->getAccount()->getUsername()).':'.strtoupper($registration->getAccount()->getShapasshash())));
-            $registration->getAccount()->setSessionkey(false);
-            $registration->getAccount()->setTokenkey("");
-            $registration->getAccount()->setJoindate(new \DateTime("now"));
-            $registration->getAccount()->setLastip($_SERVER['REMOTE_ADDR']);
-            $registration->getAccount()->setFailedlogins(0);
-            $registration->getAccount()->setLocked(false);
-            $registration->getAccount()->setLockcountry(false);
-            $registration->getAccount()->setLastlogin(new \DateTime("now"));
-            $registration->getAccount()->setOnline(false);
-            $registration->getAccount()->setExpansion(1);
-            $registration->getAccount()->setMutetime(0);
-            $registration->getAccount()->setMutereason("");
-            $registration->getAccount()->setMuteby("");
-            $registration->getAccount()->setLocale("");
-            $registration->getAccount()->setOs("");
-            $registration->getAccount()->setRecruiter("");
+            $registration->getAccount()->setShapasshash(SHA1(strtoupper($registration->getAccount()->getUsername()).':'.strtoupper($registration->getAccount()->getShapasshash())))
+                ->setSessionkey(false)
+                ->setTokenkey("")
+                ->setJoindate(new \DateTime("now"))
+                ->setLastip($_SERVER['REMOTE_ADDR'])
+                ->setFailedlogins(0)
+                ->setLocked(false)
+                ->setLockcountry(false)
+                ->setLastlogin(new \DateTime("now"))
+                ->setOnline(false)
+                ->setExpansion(1)
+                ->setMutetime(0)
+                ->setMutereason("")
+                ->setMuteby("")
+                ->setLocale("")
+                ->setOs("")
+                ->setRecruiter("");
             $em->persist($registration->getAccount());
             $em->flush();
             echo "DONE REGI SUCCESFULL";

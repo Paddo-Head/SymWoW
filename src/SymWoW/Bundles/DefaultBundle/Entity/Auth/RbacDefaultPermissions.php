@@ -22,9 +22,9 @@ class RbacDefaultPermissions
     private $secid;
 
     /**
-     * @var \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions
+     * @var \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions
      *
-     * @ORM\OneToOne(targetEntity="Symwow\Bundles\DefaultBundle\Entity\RbacPermissions")
+     * @ORM\OneToOne(targetEntity="Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="permissionId", referencedColumnName="id", unique=true)
      * })
@@ -59,10 +59,10 @@ class RbacDefaultPermissions
     /**
      * Set permissionid
      *
-     * @param \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $permissionid
+     * @param \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $permissionid
      * @return RbacDefaultPermissions
      */
-    public function setPermissionid(\Symwow\Bundles\DefaultBundle\Entity\RbacPermissions $permissionid = null)
+    public function setPermissionid(\Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions $permissionid = null)
     {
         $this->permissionid = $permissionid;
     
@@ -72,7 +72,7 @@ class RbacDefaultPermissions
     /**
      * Get permissionid
      *
-     * @return \Symwow\Bundles\DefaultBundle\Entity\RbacPermissions 
+     * @return \Symwow\Bundles\DefaultBundle\Entity\Auth\RbacPermissions
      */
     public function getPermissionid()
     {
