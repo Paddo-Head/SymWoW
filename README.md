@@ -60,6 +60,10 @@ http://symfony.com/doc/current/book/index.html
 What's inside?
 ---------------
 
+Character Entity's
+
+Auth Entity's
+
 Registration system (BETA)
 Path: "127.0.0.1/path/to/symwow/web/app_dev.php/register"
 
