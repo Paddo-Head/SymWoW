@@ -65,8 +65,18 @@ doctrine:
                 # path:     %database_path%
 
     orm:
-        auto_generate_proxy_classes: %kernel.debug%
-        auto_mapping: true
+        default_entity_manager:   auth
+        entity_managers:
+            auth:
+                connection:       auth
+                mappings:
+                    SymwowBundlesDefaultBundle: ~
+            characters:
+                connection:       characters
+                mappings:
+                    SymwowBundlesDefaultBundle: ~
+
+
 
 # Swiftmailer Configuration
 swiftmailer:

@@ -25,7 +25,7 @@ class AccountController extends Controller
 
     public function createAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
+        $em = $this->getDoctrine()->getManager('auth');
 
         $form = $this->createForm(new RegistrationType(), new Registration());
 
