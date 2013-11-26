@@ -52,9 +52,10 @@ http://symfony.com/doc/current/book/index.html
 What's inside?
 ---------------
 
-Login page (To be developed...)
+Registration system (BETA)
+Path: "127.0.0.1/path/to/symwow/web/app_dev.php/register"
 
-Registration page (To be developed...)
+Account system (To be developed...)
 
 Vote system (To be developed...)
 
