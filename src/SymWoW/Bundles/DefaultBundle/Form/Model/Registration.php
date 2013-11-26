@@ -4,12 +4,12 @@ namespace Symwow\Bundles\DefaultBundle\Form\Model;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
-use Symwow\Bundles\DefaultBundle\Entity\Account;
+use Symwow\Bundles\DefaultBundle\Entity\Auth\Account;
 
 class Registration
 {
     /**
-     * @Assert\Type(type="Symwow\Bundles\DefaultBundle\Entity\Account")
+     * @Assert\Type(type="Symwow\Bundles\DefaultBundle\Entity\Auth\Account")
      * @Assert\Valid()
      */
     protected $account;

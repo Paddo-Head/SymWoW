@@ -9,8 +9,11 @@ using Symfony. For a more detailed explanation, see the [Installation][1]
 chapter of the Symfony Documentation.
 
 (Supported frameworks)
+
 Trinity: yes
+
 Arcemu: no
+
 ~
 
 1) Installing the Standard Edition

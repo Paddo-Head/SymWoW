@@ -18,7 +18,7 @@ class AccountType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Symwow\Bundles\DefaultBundle\Entity\Account'
+            'data_class' => 'Symwow\Bundles\DefaultBundle\Entity\Auth\Account'
         ));
     }
 

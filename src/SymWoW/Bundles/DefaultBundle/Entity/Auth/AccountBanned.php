@@ -1,6 +1,6 @@
 <?php
 
-namespace Symwow\Bundles\DefaultBundle\Entity;
+namespace Symwow\Bundles\DefaultBundle\Entity\Auth;
 
 use Doctrine\ORM\Mapping as ORM;
 
