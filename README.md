@@ -57,6 +57,9 @@ Congratulations! You're now ready to use SymWoW.
 More information about Symfony 2
 http://symfony.com/doc/current/book/index.html
 
+All libraries and bundles included in the Symfony Standard Edition are
+released under the MIT or BSD license.
+
 What's inside?
 ---------------
 
@@ -73,8 +76,8 @@ Vote system (To be developed...)
 
 Donation system (To be developed...)
 
+All libraries and bundles included in the SymWoW are released
+under the MIT or BSD license.
 
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
 
 Enjoy!
