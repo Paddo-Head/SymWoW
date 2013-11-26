@@ -25,7 +25,7 @@ Arcemu: no
 4. In your browser, navigate to: "127.0.0.1/path/to/symwow/web/config.php" and follow the setup.
 5. Make sure your Trinity "auth" and "character" databases exist and run the following
 command in the project root: "php app/console doctrine:schema:update --force".
-(Symfony requires every table to have a identifying key so we update an auto increment to: "auth.logs" and "auth.ip2nation")
+(Symfony requires every table to have a identifying key so we update)
 
 
 2) Checking your System Configuration
