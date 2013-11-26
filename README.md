@@ -23,7 +23,7 @@ Arcemu: no
 2. Run the following command in the project root: "php composer.phar update".
 3. Run the following command in the project root: "php composer.phar install".
 4. In your browser, navigate to: "127.0.0.1/path/to/symwow/web/config.php" and follow the setup.
-5. Make sure your auth database exists and run the following
+5. Make sure your Trinity "auth" and "character" databases exist and run the following
 command in the project root: "php app/console doctrine:schema:update --force".
 (Symfony requires every table to have a identifying key so we update an auto increment to: "auth.logs" and "auth.ip2nation")
 
