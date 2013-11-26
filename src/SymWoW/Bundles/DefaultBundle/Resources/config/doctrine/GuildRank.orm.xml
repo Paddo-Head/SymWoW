@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\GuildRank" table="guild_rank">
+    <id name="guildid" type="integer" column="guildid"/>
+    <id name="rid" type="boolean" column="rid"/>
+    <field name="rname" type="string" column="rname" length="20" nullable="false"/>
+    <field name="rights" type="integer" column="rights" nullable="false"/>
+    <field name="bankmoneyperday" type="integer" column="BankMoneyPerDay" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterEquipmentsets" table="character_equipmentsets">
+    <id name="setguid" type="bigint" column="setguid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="guid" type="integer" column="guid" nullable="false"/>
+    <field name="setindex" type="boolean" column="setindex" nullable="false"/>
+    <field name="name" type="string" column="name" length="31" nullable="false"/>
+    <field name="iconname" type="string" column="iconname" length="100" nullable="false"/>
+    <field name="ignoreMask" type="integer" column="ignore_mask" nullable="false"/>
+    <field name="item0" type="integer" column="item0" nullable="false"/>
+    <field name="item1" type="integer" column="item1" nullable="false"/>
+    <field name="item2" type="integer" column="item2" nullable="false"/>
+    <field name="item3" type="integer" column="item3" nullable="false"/>
+    <field name="item4" type="integer" column="item4" nullable="false"/>
+    <field name="item5" type="integer" column="item5" nullable="false"/>
+    <field name="item6" type="integer" column="item6" nullable="false"/>
+    <field name="item7" type="integer" column="item7" nullable="false"/>
+    <field name="item8" type="integer" column="item8" nullable="false"/>
+    <field name="item9" type="integer" column="item9" nullable="false"/>
+    <field name="item10" type="integer" column="item10" nullable="false"/>
+    <field name="item11" type="integer" column="item11" nullable="false"/>
+    <field name="item12" type="integer" column="item12" nullable="false"/>
+    <field name="item13" type="integer" column="item13" nullable="false"/>
+    <field name="item14" type="integer" column="item14" nullable="false"/>
+    <field name="item15" type="integer" column="item15" nullable="false"/>
+    <field name="item16" type="integer" column="item16" nullable="false"/>
+    <field name="item17" type="integer" column="item17" nullable="false"/>
+    <field name="item18" type="integer" column="item18" nullable="false"/>
+  </entity>
+</doctrine-mapping>

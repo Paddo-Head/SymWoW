@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\Guild" table="guild">
+    <id name="guildid" type="integer" column="guildid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="24" nullable="false"/>
+    <field name="leaderguid" type="integer" column="leaderguid" nullable="false"/>
+    <field name="emblemstyle" type="boolean" column="EmblemStyle" nullable="false"/>
+    <field name="emblemcolor" type="boolean" column="EmblemColor" nullable="false"/>
+    <field name="borderstyle" type="boolean" column="BorderStyle" nullable="false"/>
+    <field name="bordercolor" type="boolean" column="BorderColor" nullable="false"/>
+    <field name="backgroundcolor" type="boolean" column="BackgroundColor" nullable="false"/>
+    <field name="info" type="text" column="info" nullable="false"/>
+    <field name="motd" type="string" column="motd" length="128" nullable="false"/>
+    <field name="createdate" type="integer" column="createdate" nullable="false"/>
+    <field name="bankmoney" type="bigint" column="BankMoney" nullable="false"/>
+  </entity>
+</doctrine-mapping>

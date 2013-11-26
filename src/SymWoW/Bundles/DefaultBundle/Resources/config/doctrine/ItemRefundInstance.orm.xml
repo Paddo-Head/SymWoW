@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\ItemRefundInstance" table="item_refund_instance">
+    <id name="itemGuid" type="integer" column="item_guid"/>
+    <id name="playerGuid" type="integer" column="player_guid"/>
+    <field name="paidmoney" type="integer" column="paidMoney" nullable="false"/>
+    <field name="paidextendedcost" type="smallint" column="paidExtendedCost" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterHomebind" table="character_homebind">
+    <id name="guid" type="integer" column="guid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="mapid" type="smallint" column="mapId" nullable="false"/>
+    <field name="zoneid" type="smallint" column="zoneId" nullable="false"/>
+    <field name="posx" type="float" column="posX" nullable="false"/>
+    <field name="posy" type="float" column="posY" nullable="false"/>
+    <field name="posz" type="float" column="posZ" nullable="false"/>
+  </entity>
+</doctrine-mapping>

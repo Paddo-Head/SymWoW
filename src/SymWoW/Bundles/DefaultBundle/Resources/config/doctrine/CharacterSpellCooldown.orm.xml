@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterSpellCooldown" table="character_spell_cooldown">
+    <id name="guid" type="integer" column="guid"/>
+    <id name="spell" type="integer" column="spell"/>
+    <field name="item" type="integer" column="item" nullable="false"/>
+    <field name="time" type="integer" column="time" nullable="false"/>
+  </entity>
+</doctrine-mapping>

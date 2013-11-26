@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\GuildBankItem" table="guild_bank_item">
+    <id name="guildid" type="integer" column="guildid"/>
+    <id name="tabid" type="boolean" column="TabId"/>
+    <id name="slotid" type="boolean" column="SlotId"/>
+    <field name="itemGuid" type="integer" column="item_guid" nullable="false"/>
+  </entity>
+</doctrine-mapping>

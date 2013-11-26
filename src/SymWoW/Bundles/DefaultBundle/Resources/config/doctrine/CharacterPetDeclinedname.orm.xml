@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterPetDeclinedname" table="character_pet_declinedname">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="owner" type="integer" column="owner" nullable="false"/>
+    <field name="genitive" type="string" column="genitive" length="12" nullable="false"/>
+    <field name="dative" type="string" column="dative" length="12" nullable="false"/>
+    <field name="accusative" type="string" column="accusative" length="12" nullable="false"/>
+    <field name="instrumental" type="string" column="instrumental" length="12" nullable="false"/>
+    <field name="prepositional" type="string" column="prepositional" length="12" nullable="false"/>
+  </entity>
+</doctrine-mapping>

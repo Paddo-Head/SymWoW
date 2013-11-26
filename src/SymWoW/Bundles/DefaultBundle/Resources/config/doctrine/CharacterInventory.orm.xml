@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterInventory" table="character_inventory">
+    <id name="item" type="integer" column="item">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="guid" type="integer" column="guid" nullable="false"/>
+    <field name="bag" type="integer" column="bag" nullable="false"/>
+    <field name="slot" type="boolean" column="slot" nullable="false"/>
+  </entity>
+</doctrine-mapping>

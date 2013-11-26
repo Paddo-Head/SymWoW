@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterGlyphs" table="character_glyphs">
+    <id name="guid" type="integer" column="guid"/>
+    <id name="spec" type="boolean" column="spec"/>
+    <field name="glyph1" type="smallint" column="glyph1" nullable="true"/>
+    <field name="glyph2" type="smallint" column="glyph2" nullable="true"/>
+    <field name="glyph3" type="smallint" column="glyph3" nullable="true"/>
+    <field name="glyph4" type="smallint" column="glyph4" nullable="true"/>
+    <field name="glyph5" type="smallint" column="glyph5" nullable="true"/>
+    <field name="glyph6" type="smallint" column="glyph6" nullable="true"/>
+  </entity>
+</doctrine-mapping>

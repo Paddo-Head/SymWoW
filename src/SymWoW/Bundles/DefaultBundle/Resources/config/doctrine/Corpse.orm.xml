@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\Corpse" table="corpse">
+    <id name="corpseguid" type="integer" column="corpseGuid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="guid" type="integer" column="guid" nullable="false"/>
+    <field name="posx" type="float" column="posX" nullable="false"/>
+    <field name="posy" type="float" column="posY" nullable="false"/>
+    <field name="posz" type="float" column="posZ" nullable="false"/>
+    <field name="orientation" type="float" column="orientation" nullable="false"/>
+    <field name="mapid" type="smallint" column="mapId" nullable="false"/>
+    <field name="phasemask" type="integer" column="phaseMask" nullable="false"/>
+    <field name="displayid" type="integer" column="displayId" nullable="false"/>
+    <field name="itemcache" type="text" column="itemCache" nullable="false"/>
+    <field name="bytes1" type="integer" column="bytes1" nullable="false"/>
+    <field name="bytes2" type="integer" column="bytes2" nullable="false"/>
+    <field name="guildid" type="integer" column="guildId" nullable="false"/>
+    <field name="flags" type="boolean" column="flags" nullable="false"/>
+    <field name="dynflags" type="boolean" column="dynFlags" nullable="false"/>
+    <field name="time" type="integer" column="time" nullable="false"/>
+    <field name="corpsetype" type="boolean" column="corpseType" nullable="false"/>
+    <field name="instanceid" type="integer" column="instanceId" nullable="false"/>
+  </entity>
+</doctrine-mapping>

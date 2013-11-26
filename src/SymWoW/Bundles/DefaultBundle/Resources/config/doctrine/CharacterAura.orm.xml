@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterAura" table="character_aura">
+    <id name="guid" type="integer" column="guid"/>
+    <id name="casterGuid" type="bigint" column="caster_guid"/>
+    <id name="itemGuid" type="bigint" column="item_guid"/>
+    <id name="spell" type="integer" column="spell"/>
+    <id name="effectMask" type="boolean" column="effect_mask"/>
+    <field name="recalculateMask" type="boolean" column="recalculate_mask" nullable="false"/>
+    <field name="stackcount" type="boolean" column="stackcount" nullable="false"/>
+    <field name="amount0" type="integer" column="amount0" nullable="false"/>
+    <field name="amount1" type="integer" column="amount1" nullable="false"/>
+    <field name="amount2" type="integer" column="amount2" nullable="false"/>
+    <field name="baseAmount0" type="integer" column="base_amount0" nullable="false"/>
+    <field name="baseAmount1" type="integer" column="base_amount1" nullable="false"/>
+    <field name="baseAmount2" type="integer" column="base_amount2" nullable="false"/>
+    <field name="maxduration" type="integer" column="maxduration" nullable="false"/>
+    <field name="remaintime" type="integer" column="remaintime" nullable="false"/>
+    <field name="remaincharges" type="boolean" column="remaincharges" nullable="false"/>
+  </entity>
+</doctrine-mapping>

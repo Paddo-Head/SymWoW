@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterBattlegroundData" table="character_battleground_data">
+    <id name="guid" type="integer" column="guid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="instanceid" type="integer" column="instanceId" nullable="false"/>
+    <field name="team" type="smallint" column="team" nullable="false"/>
+    <field name="joinx" type="float" column="joinX" nullable="false"/>
+    <field name="joiny" type="float" column="joinY" nullable="false"/>
+    <field name="joinz" type="float" column="joinZ" nullable="false"/>
+    <field name="joino" type="float" column="joinO" nullable="false"/>
+    <field name="joinmapid" type="smallint" column="joinMapId" nullable="false"/>
+    <field name="taxistart" type="integer" column="taxiStart" nullable="false"/>
+    <field name="taxiend" type="integer" column="taxiEnd" nullable="false"/>
+    <field name="mountspell" type="integer" column="mountSpell" nullable="false"/>
+  </entity>
+</doctrine-mapping>

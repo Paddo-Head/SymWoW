@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterAccountData" table="character_account_data">
+    <id name="guid" type="integer" column="guid"/>
+    <id name="type" type="boolean" column="type"/>
+    <field name="time" type="integer" column="time" nullable="false"/>
+    <field name="data" type="blob" column="data" nullable="false"/>
+  </entity>
+</doctrine-mapping>

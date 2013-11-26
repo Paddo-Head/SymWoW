@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Symwow\Bundles\DefaultBundle\Entity\CharacterArenaStats" table="character_arena_stats">
+    <id name="guid" type="integer" column="guid"/>
+    <id name="slot" type="boolean" column="slot"/>
+    <field name="matchmakerrating" type="smallint" column="matchMakerRating" nullable="false"/>
+  </entity>
+</doctrine-mapping>
