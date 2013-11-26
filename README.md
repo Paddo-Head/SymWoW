@@ -14,7 +14,7 @@ chapter of the Symfony Documentation.
 1. Make sure you added php.exe to your system variables so you can run php as a command.
 2. Run the following command in the project root: "php composer.phar update".
 3. Run the following command in the project root: "php composer.phar install".
-4. In your browser, navigate to: "127.0.0.1/your_SymWoW_root_dir/web/config.php" and follow the setup.
+4. In your browser, navigate to: "127.0.0.1/path/to/symwow/web/config.php" and follow the setup.
 
 2) Checking your System Configuration
 -------------------------------------
@@ -38,17 +38,20 @@ If you get any warnings or recommendations, fix them before moving on.
 3) Browsing the Demo Application
 --------------------------------
 
-In your browser, navigate to : "127.0.0.1/your_SymWoW_root_dir/web/app_dev.php/hello/Paddo-Head".
+In your browser, navigate to : "127.0.0.1/path/to/symwow/web/app_dev.php/hello/Paddo-Head".
 
 Congratulations! You're now ready to use SymWoW.
 
+More information about Symfony 2
+http://symfony.com/doc/current/book/index.html
+
 What's inside?
 ---------------
-(To be developed...)
-Login page
-Registration page
-Vote system
-Donation system
+(To be developed...).
+Login page.
+Registration page.
+Vote system.
+Donation system.
 
 All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.
