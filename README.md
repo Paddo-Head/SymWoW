@@ -50,12 +50,15 @@ If you get any warnings or recommendations, fix them before moving on.
 3) Browsing the Demo Application
 --------------------------------
 
-In your browser, navigate to : "127.0.0.1/path/to/symwow/web/app_dev.php/hello/Paddo-Head".
+In your browser, navigate to :
+
+    127.0.0.1/path/to/symwow/web/app_dev.php/hello/Paddo-Head.
 
 Congratulations! You're now ready to use SymWoW.
 
 More information about Symfony 2
-http://symfony.com/doc/current/book/index.html
+
+    http://symfony.com/doc/current/book/index.html
 
 All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.
@@ -68,7 +71,8 @@ Character Entity's
 Auth Entity's
 
 Registration system (BETA)
-Path: "127.0.0.1/path/to/symwow/web/app_dev.php/register"
+
+    127.0.0.1/path/to/symwow/web/app_dev.php/register
 
 Account system (To be developed...)
 
